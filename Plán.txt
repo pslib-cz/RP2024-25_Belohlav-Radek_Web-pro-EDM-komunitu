@@ -1,0 +1,62 @@
+Období: Konec Března - Polovina Dubna 2025
+--------------------------------------------------
+Hlavní Cíl: Design & Základní Implementace
+Klíčové Činnosti:
+  - Figma návrh
+  - Next.js projekt setup
+  - Základní routování, layout
+  - První komponenty
+Poznámka: Vytvoření vizuálního a technického základu.
+
+--------------------------------------------------
+Období: Polovina Dubna - 21. 4. 2025
+--------------------------------------------------
+Hlavní Cíl: Rozpracování Implementace
+Klíčové Činnosti:
+  - Kódování hlavních sekcí dle Figmy (DJs, Novinky - statická data)
+  - Responzivita
+  - Psaní dokumentace
+Poznámka: Příprava funkčního prototypu pro 2. kontrolu.
+
+--------------------------------------------------
+Datum: 21. 4. 2025
+--------------------------------------------------
+Milník: 2. Kontrola
+Úkol: Ukázka rozpracované Next.js aplikace, konzultace dokumentace
+Výsledek: Zpětná vazba na implementaci.
+
+--------------------------------------------------
+Období: Konec Dubna - Začátek Května 2025
+--------------------------------------------------
+Hlavní Cíl: Dokončení Funkcionality & Obsahu
+Klíčové Činnosti:
+  - Implementace zbylých sekcí
+  - Vícejazyčnost
+  - Doladění UI/UX
+Poznámka: Intenzivní fáze dokončování.
+
+--------------------------------------------------
+Období: Začátek Května - Polovina Května 2025
+--------------------------------------------------
+Hlavní Cíl: Testování, Finalizace & Nasazení
+Klíčové Činnosti:
+  - Testování (funkční, responzivní)
+  - SEO základy
+  - Finální statický obsah
+  - Dokončení dokumentace
+  - Deployment (nasazení)
+Poznámka: Příprava na odevzdání.
+
+--------------------------------------------------
+Datum: 16. 5. 2025 (12:00)
+--------------------------------------------------
+Milník: Odevzdání Práce
+Úkol: Odevzdání finálního kódu (Next.js aplikace) a dokumentace
+Výsledek: Finální termín.
+
+--------------------------------------------------
+Období: Konec Května - Červen 2025
+--------------------------------------------------
+Hlavní Cíl: Příprava na Obhajobu
+Klíčové Činnosti:
+  - Tvorba prezentace
