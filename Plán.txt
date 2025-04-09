@@ -1,62 +1,72 @@
-Období: Konec Března - Polovina Dubna 2025
---------------------------------------------------
-Hlavní Cíl: Design & Základní Implementace
-Klíčové Činnosti:
-  - Figma návrh
-  - Next.js projekt setup
-  - Základní routování, layout
-  - První komponenty
-Poznámka: Vytvoření vizuálního a technického základu.
+Cíle a osnova v časovém rozvržení
 
 --------------------------------------------------
-Období: Polovina Dubna - 21. 4. 2025
+Do 15. 4. 2025 — 1. kontrola
+Úkol: Základní návrh, osnova dokumentace, prvotní implementace
 --------------------------------------------------
-Hlavní Cíl: Rozpracování Implementace
-Klíčové Činnosti:
-  - Kódování hlavních sekcí dle Figmy (DJs, Novinky - statická data)
-  - Responzivita
-  - Psaní dokumentace
-Poznámka: Příprava funkčního prototypu pro 2. kontrolu.
+Odpovídající fáze práce:
+
+- Návrh webu
+  - Vytvoření prvního grafického návrhu úvodní stránky (Figma)
+  - Výběr vhodných technologií (např. Next.js, Tailwind CSS, i18n, případná CMS řešení)
+
+- Zahájení dokumentace
+  - Sepsání osnovy technické dokumentace
+  - Definice cílů a struktury projektu
+
+- Prvotní implementace
+  - Vytvoření základního projektu v Next.js
+  - Implementace základního routování a layoutu
+  - První komponenty (např. hlavička, patička)
+
+Výstup: Základní vizuální a technická struktura webu.
 
 --------------------------------------------------
-Datum: 21. 4. 2025
+Do 21. 4. 2025 — 2. kontrola
+Úkol: Rozpracovaná implementace, konzultace dokumentace
 --------------------------------------------------
-Milník: 2. Kontrola
-Úkol: Ukázka rozpracované Next.js aplikace, konzultace dokumentace
-Výsledek: Zpětná vazba na implementaci.
+Odpovídající fáze práce:
+
+- Implementace
+  - Kódování hlavních sekcí dle návrhu (např. DJs, novinky – statická data)
+  - Práce s komponentami a jejich strukturování
+  - První úpravy pro responzivitu
+
+- Testování
+  - Základní funkční testování na různých zařízeních a rozlišeních
 
 --------------------------------------------------
-Období: Konec Dubna - Začátek Května 2025
+Do 16. 5. 2025 (12:00) — Odevzdání finální práce
+Úkol: Odevzdání finální verze kódu a dokumentace, hodnocení
 --------------------------------------------------
-Hlavní Cíl: Dokončení Funkcionality & Obsahu
-Klíčové Činnosti:
-  - Implementace zbylých sekcí
-  - Vícejazyčnost
-  - Doladění UI/UX
-Poznámka: Intenzivní fáze dokončování.
+Odpovídající fáze práce:
+
+- Dokončení implementace
+  - Implementace zbývajících sekcí dle návrhu
+  - Přidání vícejazyčné podpory
+  - Finalizace UI/UX prvků (zaoblené tvary, dynamické pozadí, interaktivní prvky)
+
+- Testování a optimalizace
+  - Důkladné testování funkčnosti a responzivity
+  - Základní SEO úpravy, optimalizace výkonu
+  - Odladění chyb a detailů
+
+- Dokumentace
+  - Finální sepsání dokumentace pokrývající celý vývoj
+  - Zahrnutí návrhů na možné budoucí rozšíření (CMS, dynamický obsah)
+
+- Deployment
+  - Nasazení webu na hosting (např. Vercel)
+
+Výstup: Plně funkční a nasazený web s kompletní dokumentací.
 
 --------------------------------------------------
-Období: Začátek Května - Polovina Května 2025
+Červen 2025 — Prezentace před komisí
+Úkol: Prezentace a obhajoba práce před hodnotící komisí
 --------------------------------------------------
-Hlavní Cíl: Testování, Finalizace & Nasazení
-Klíčové Činnosti:
-  - Testování (funkční, responzivní)
-  - SEO základy
-  - Finální statický obsah
-  - Dokončení dokumentace
-  - Deployment (nasazení)
-Poznámka: Příprava na odevzdání.
+- Příprava prezentace
+  - Vytvoření prezentačních materiálů (např. PowerPoint nebo Canva)
+  - Strukturované shrnutí práce, přehled použitých technologií a vývoje
+  - Zdůraznění přínosů a možností dalšího vývoje
 
---------------------------------------------------
-Datum: 16. 5. 2025 (12:00)
---------------------------------------------------
-Milník: Odevzdání Práce
-Úkol: Odevzdání finálního kódu (Next.js aplikace) a dokumentace
-Výsledek: Finální termín.
-
---------------------------------------------------
-Období: Konec Května - Červen 2025
---------------------------------------------------
-Hlavní Cíl: Příprava na Obhajobu
-Klíčové Činnosti:
-  - Tvorba prezentace
+Výstup: Obhájený projekt s jasným vysvětlením postupu a dosažených výsledků.
