@@ -1,0 +1,434 @@
+/* EventsSection.module.css */
+
+.eventsSection {
+    padding: 5rem 0;
+    /* Removed background-color and overflow: hidden */
+    position: relative; /* Keep for z-index context */
+    z-index: 1; /* Ensure content is above global background */
+  }
+  
+  /* Removed decorative background ::before and ::after elements */
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #f953c6, #8a2387);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .viewAllLink {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .viewAllLink:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .viewAllIcon {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .viewAllLink:hover .viewAllIcon {
+    transform: translateX(3px);
+  }
+  
+  /* --- Swiper Styles --- */
+  .swiperContainer {
+    width: 100%;
+    padding-top: 1rem; /* Space for potential pagination */
+    padding-bottom: 3rem; /* Space for pagination/navigation */
+    position: relative;
+  }
+  
+  .swiperSlide {
+    height: auto; /* Allow slides to determine height */
+    display: flex; /* Ensure content stretches */
+  }
+  
+  /* --- Event Card Styles (Adjusted for Swiper) --- */
+  .eventCard {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack image and content */
+    width: 100%; /* Make card fill the slide */
+    background-color: rgba(30, 30, 40, 0.9); /* Moved background here */
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    height: 100%; /* Make card fill slide height */
+  }
+  
+  .eventCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .eventCard:hover .image {
+    transform: scale(1.1);
+  }
+  
+  .imageContainer {
+    position: relative; /* Keep relative */
+    height: 12rem; /* Fixed height */
+    width: 100%;
+    flex-shrink: 0;
+    overflow: hidden; /* Hide image overflow on scale */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-top-left-radius: 1rem; /* Apply radius */
+    border-top-right-radius: 1rem;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%); /* Adjusted gradient */
+    z-index: 1;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .eventContent {
+    position: relative; /* No longer absolute */
+    padding: 1.5rem;
+    z-index: 2;
+    flex-grow: 1; /* Allow content to fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push buttons to bottom */
+  }
+  
+  .date {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .eventTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    transition: color 0.2s ease;
+  }
+  
+  .eventCard:hover .eventTitle {
+    color: #f953c6;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+  }
+  
+  .locationIcon {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  /* Newsletter styling */
+  .newsletterContainer {
+    margin-top: 4rem;
+    padding: 1px; /* For gradient border effect */
+    border-radius: 1rem;
+    background: linear-gradient(to right, #f953c6, #8a2387);
+  }
+  
+  .newsletter {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.938rem;
+    padding: 2.5rem;
+    text-align: center;
+  }
+  
+  .newsletterTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletterDescription {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 40rem;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .newsletterForm {
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  
+  .inputWrapper {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .inputWrapper {
+      flex-direction: row;
+    }
+  }
+  
+  .emailInput {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .emailInput:focus {
+    outline: none;
+    border-color: #2dd4bf;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .emailInput::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .submitButton {
+    background: linear-gradient(to right, #9333ea, #2dd4bf);
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(45, 212, 191, 0.3);
+  }
+  
+  .consentLabel {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    margin-top: 1rem;
+  }
+  
+  .consentCheckbox {
+    margin-top: 0.25rem;
+  }
+
+/* Added styles for event buttons */
+.eventDetail { /* Add some margin below date/location */
+  margin-bottom: 1rem; 
+  display: flex;
+  flex-direction: column; /* Stack date and location */
+  gap: 0.5rem; /* Space between date and location */
+}
+
+.eventTitleLink { /* Style for linked title */
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.eventTitleLink:hover .eventTitle {
+  color: #2dd4bf; /* Apply hover color */
+}
+
+.date svg, .location svg { /* Add icons next to date/location */
+  margin-right: 0.5rem;
+  vertical-align: middle; /* Align icons better */
+  position: relative;
+  top: -1px; /* Fine-tune vertical alignment */
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 0.75rem; /* Space between buttons */
+  margin-top: 1rem; /* Space above buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+}
+
+.eventButton {
+  display: inline-block;
+  padding: 0.4rem 1rem; /* Adjust padding */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Default border */
+  border-radius: 9999px; /* Pill shape */
+  font-size: 0.75rem; /* Smaller font size */
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-transform: uppercase; /* Match image */
+  letter-spacing: 0.05em; /* Match image */
+}
+
+.eventButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: white;
+}
+
+/* Specific button styles (can be customized further if needed) */
+.infoButton {
+  /* Inherits base styles */
+}
+
+.ticketButton {
+  /* Inherits base styles */
+  /* Example: Different hover? */
+  /* &:hover { background-color: #2dd4bf; border-color: #2dd4bf; color: black; } */
+}
+
+/* Adjust event card height if needed */
+.eventCard {
+  height: auto; /* Allow card to grow based on content */
+  min-height: 22rem; /* Ensure a minimum height */
+  display: flex; /* Use flexbox for better content control */
+  flex-direction: column; /* Stack image and content */
+  background-color: transparent; /* Remove default background if any */
+  box-shadow: none; /* Remove default shadow if any */
+  border-radius: 1rem; /* Ensure radius is applied */
+  overflow: hidden; /* Keep overflow hidden */
+}
+
+.imageContainer {
+  position: relative; /* Change from absolute */
+  height: 12rem; /* Fixed height for image */
+  width: 100%;
+  flex-shrink: 0; /* Prevent image container from shrinking */
+}
+
+.image {
+  border-top-left-radius: 1rem; /* Apply radius only to top corners */
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 0; /* Remove bottom radius */
+  border-bottom-right-radius: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.eventCard:hover .image {
+  transform: scale(1.1); /* Keep hover effect */
+}
+
+.overlay {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 1;
+}
+
+.eventContent {
+  position: relative; /* Change from absolute */
+  background-color: rgba(30, 30, 40, 0.9); /* Darker background for content */
+  backdrop-filter: blur(3px);
+  border-bottom-left-radius: 1rem; /* Apply radius to bottom corners */
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 0; /* Remove top radius */
+  border-top-right-radius: 0;
+  flex-grow: 1; /* Allow content to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push buttons to bottom */
+  padding: 1.5rem; /* Keep padding */
+  z-index: 2; /* Ensure content is above image overlay */
+}
+
+/* --- Swiper Navigation/Pagination Customization (Optional) --- */
+.swiperContainer :global(.swiper-button-prev),
+.swiperContainer :global(.swiper-button-next) {
+  color: #ffffff; /* White arrows */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  border-radius: 50%;
+  width: 40px; /* Adjust size */
+  height: 40px;
+  transition: background-color 0.2s ease;
+}
+
+.swiperContainer :global(.swiper-button-prev:hover),
+.swiperContainer :global(.swiper-button-next:hover) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiperContainer :global(.swiper-button-prev::after),
+.swiperContainer :global(.swiper-button-next::after) {
+  font-size: 1rem; /* Adjust arrow size */
+  font-weight: bold;
+}
+
+.swiperContainer :global(.swiper-pagination-bullet) {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  transition: background-color 0.2s ease;
+}
+
+.swiperContainer :global(.swiper-pagination-bullet-active) {
+  background-color: #2dd4bf; /* Active bullet color */
+}
+
+/* Remove grid media query */

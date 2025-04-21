@@ -1,0 +1,4 @@
+/* Blue gradient fallback if the image doesn't load */
+body {
+  background: radial-gradient(ellipse at center, #1e90ff 0%, #0066cc 50%, #003366 100%) !important;
+} 

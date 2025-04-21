@@ -1,0 +1,299 @@
+/* Header.module.css */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.headerScrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-weight: bold;
+  background: linear-gradient(to right, #f953c6, #8a2387);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05em;
+}
+
+.navDesktop {
+  display: none;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navDesktop {
+    display: flex;
+  }
+  .navDesktop > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.navLink {
+  color: white;
+  transition: color 0.2s ease-in-out, transform 0.2s ease;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navLink:hover {
+  color: #f953c6;
+  transform: translateY(-2px);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #f953c6, #8a2387);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.searchButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.searchButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.languageSelector {
+  position: relative;
+}
+
+.languageButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.languageButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.languageDropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.languageSelector:hover .languageDropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.languageOption {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.languageOption:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobileMenuButton {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 9999px;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mobileMenuButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .mobileMenuButton {
+    display: none;
+  }
+}
+
+.mobileMenuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobileMenuOverlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobileMenuOverlay {
+    display: none;
+  }
+}
+
+.navMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navLinkMobile {
+  color: white;
+  transition: color 0.2s ease-in-out;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navLinkMobile:hover {
+  color: #f953c6;
+}
+
+.mobileActions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.searchButtonMobile {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.searchButtonMobile:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mobileLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+.mobileLanguageSelect {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}

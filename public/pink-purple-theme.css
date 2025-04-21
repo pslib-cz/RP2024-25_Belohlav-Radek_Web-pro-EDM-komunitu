@@ -1,0 +1,63 @@
+/* Pink-Purple Theme CSS */
+
+:root {
+  --gradient-pink-purple: linear-gradient(135deg, #f953c6 0%, #b91d73 50%, #8a2387 100%);
+  --color-pink: #f953c6;
+  --color-purple: #8a2387;
+  --color-mid-purple: #b91d73;
+}
+
+/* Text gradient - excluding h1 */
+h2, h3, h4, h5, h6, 
+.subtitle, 
+[class*="subtitle"],
+.gradient-text {
+  background: var(--gradient-pink-purple);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Keep h1 white */
+h1, .title, [class*="Title"] {
+  color: white !important;
+}
+
+/* Button borders and accents */
+button, 
+.button, 
+[class*="Button"], 
+[class*="btn"], 
+a.button,
+input[type="submit"],
+input[type="button"] {
+  color: white !important;
+  border: 1px solid var(--color-pink) !important;
+  position: relative !important;
+  z-index: 1 !important;
+  padding: 10px 20px !important;
+}
+
+
+/* Border accents */
+hr, [class*="Divider"], [class*="divider"] {
+  background: var(--gradient-pink-purple) !important;
+  height: 2px !important;
+  border: none !important;
+}
+
+/* Icons */
+svg, i, [class*="Icon"], [class*="icon"] {
+  color: var(--color-pink) !important;
+}
+
+/* Focus states */
+*:focus {
+  outline-color: var(--color-pink) !important;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(185, 29, 115, 0.3) !important;
+} 

@@ -1,0 +1,326 @@
+/* Newsletter.module.css */
+
+.newsletter {
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    width: 100%;
+    max-width: 100vw;
+    background-color: transparent !important;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .infoSection {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+  }
+  
+  .formSection {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .featuresSection {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .header {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--gradient-pink-purple);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .form {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .emailWrapper {
+    position: relative;
+    flex: 1;
+  }
+  
+  .emailIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+  }
+  
+  .emailInput {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emailInput:focus {
+    outline: none;
+    border-color: #2dd4bf;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.2);
+  }
+  
+  .emailInput::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--gradient-pink-purple);    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 5px 15px rgba(45, 212, 191, 0.2);
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(45, 212, 191, 0.3);
+  }
+  
+  .submitButton:hover .buttonIcon {
+    transform: translateX(3px);
+  }
+  
+  .buttonIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .errorMessage {
+    color: #f87171;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .successMessage {
+    color: #2dd4bf;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .privacyText {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+  
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .checkboxLabel:hover .checkmark {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .checkbox:checked ~ .checkmark {
+    background-color: #2dd4bf;
+    border-color: #2dd4bf;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkboxLabel .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .link {
+    color: #2dd4bf;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+  }
+  
+  .link:hover {
+    color: #9333ea;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+  }
+  
+  .featureIcon {
+    width: 1rem;
+    height: 1rem;
+    color: #2dd4bf;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .newsletter {
+      padding: 3rem 0;
+      margin: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0 1rem;
+      margin: 0;
+      width: 100%;
+    }
+    
+    .infoSection,
+    .formSection,
+    .featuresSection {
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    .header,
+    .description {
+      text-align: center;
+    }
+    
+    .features {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .privacyText {
+      text-align: center;
+    }
+    
+    .checkboxLabel {
+      justify-content: center;
+    }
+    
+    .inputGroup {
+      flex-direction: column;
+    }
+  }
