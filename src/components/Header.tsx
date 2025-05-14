@@ -22,32 +22,57 @@ export const Header: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Přidáme detekci prohlížeče
+  const [isSafari, setIsSafari] = useState(false);
+
   useEffect(() => {
+    // Detekce Safari prohlížeče
+    const isSafariBrowser = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    setIsSafari(isSafariBrowser);
+
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 30;
+      // Snížíme práh, od kterého se header považuje za scrolled
+      const isScrolled = window.scrollY > 5;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
       
-      const maxScrollForEffect = 200;
+      // Snížíme maximální scroll pro plný efekt
+      const maxScrollForEffect = 100;
       const progress = Math.min(window.scrollY / maxScrollForEffect, 1);
       setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
+  
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
 
+  // Vytvoříme class pro blurnutý header s explicitní kontrolou
   const headerClasses = `${styles.header} ${scrolled ? styles.headerScrolled : ''}`;
 
+  // Používáme blur efekt s velmi lehkým tmavým tónem
   const dynamicHeaderStyle = {
-    backgroundColor: `rgba(0, 0, 0, ${0.2 + scrollProgress * 0.6})`,
-    backdropFilter: `blur(${5 + scrollProgress * 15}px)`,
-    WebkitBackdropFilter: `blur(${5 + scrollProgress * 15}px)`,
+    backdropFilter: `blur(4px)`,
+    WebkitBackdropFilter: `blur(4px)`,
+    backgroundColor: `rgba(0, 0, 10, ${scrolled ? 0.2 : 0})`,
+    borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
   };
 
   return (
-    <header className={headerClasses} style={scrolled ? dynamicHeaderStyle : undefined}>
+    <header className={headerClasses} style={dynamicHeaderStyle}>
       <div className={styles.container}>
         <Link href="/" className={styles.logoLink}>
           <div className={styles.logoContainer}>

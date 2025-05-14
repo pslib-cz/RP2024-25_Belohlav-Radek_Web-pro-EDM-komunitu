@@ -1,0 +1,419 @@
+.main {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgba(10, 10, 20, 0.8);
+}
+
+.heroSection {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.filterSection {
+  background-color: #252c35;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sectionTitle:first-child {
+  margin-top: 0;
+}
+
+.filterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.filterGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filterTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.filterOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.filterOption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.filterOption:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.filterOption.active {
+  background-color: #f058b3;
+  background-image: linear-gradient(45deg, #f058b3, #8d65f2);
+  color: white;
+}
+
+.filterCode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  min-width: 32px;
+  height: 24px;
+  padding: 0 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f058b3;
+}
+
+.filterOption.active .filterCode {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.filterName {
+  font-size: 0.9rem;
+}
+
+.filterCount {
+  margin-left: auto;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.searchContainer {
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 3rem 1rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.searchButton {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.searchButton:hover {
+  color: white;
+}
+
+.eventsSection {
+  position: relative;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.categoryButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.categoryButton:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.categoryButton.active {
+  background: var(--gradient-pink-purple);
+  border: none;
+  color: white;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.eventCard {
+  background-color: rgba(20, 20, 30, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.eventCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  position: relative;
+  height: 220px;
+}
+
+.eventImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: var(--gradient-pink-purple);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.content {
+  padding-top: 1.5rem;
+}
+
+.date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.newsTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.titleLink {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.titleLink:hover {
+  color: #ffcc00;
+}
+
+.excerpt {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.eventActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.infoButton {
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 1.4rem;
+  border-radius: 2rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    align-self: center;
+}
+
+.infoButton:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.ticketsButton {
+  background: var(--gradient-pink-purple);
+  border: none;
+  color: white;
+  box-shadow: 0 8px 20px rgba(45, 212, 191, 0.25);
+  font-weight: 700;
+  padding: 0.75rem 1.8rem;
+  letter-spacing: 0.06em;
+  border-radius: 2rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  align-self: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.ticketsButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(249, 83, 198, 0.3);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pageButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pageButton:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.pageButton.active {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+  border: 1px solid #f953c6;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .eventsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .categories {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    flex-wrap: nowrap;
+  }
+  
+  .categoryButton {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .eventsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 

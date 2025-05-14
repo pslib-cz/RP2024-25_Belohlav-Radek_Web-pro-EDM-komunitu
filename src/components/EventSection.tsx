@@ -1,10 +1,11 @@
 "use client"; // Required for Swiper hooks
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules'; // Import necessary modules
+import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -40,6 +41,7 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
 }) => {
   // Combine the local module class with the global background class
   const sectionClasses = `${styles.eventsSection} sectionBackground`;
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <section className={sectionClasses}>
@@ -66,13 +68,53 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
           </Link>
         </div>
 
+        {/* Custom Navigation Arrows */}
+        <div 
+          className={`${styles.navArrow} ${styles.navArrowPrev}`}
+          onClick={() => swiperRef.current?.slidePrev()}
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="3" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+            className={styles.navArrowIcon}
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </div>
+        
+        <div 
+          className={`${styles.navArrow} ${styles.navArrowNext}`}
+          onClick={() => swiperRef.current?.slideNext()}
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="3" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+            className={styles.navArrowIcon}
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
         {/* Swiper Implementation */}
         <Swiper
           modules={[Navigation, Pagination, A11y]} // Add modules
           spaceBetween={30} // Space between slides
           slidesPerView={1} // Default slides per view
-          navigation // Enable navigation arrows
+          navigation={false} // Disable default navigation arrows
           pagination={{ clickable: true }} // Enable clickable pagination dots
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           breakpoints={{
             // when window width is >= 640px
             640: {

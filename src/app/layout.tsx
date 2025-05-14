@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="cs">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="stylesheet" href="/theme.css" />
         <link rel="stylesheet" href="/blue-background.css" />
         <link rel="stylesheet" href="/remove-effects.css" />
         <link rel="stylesheet" href="/pink-purple-theme.css" />

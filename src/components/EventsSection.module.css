@@ -432,3 +432,67 @@
 }
 
 /* Remove grid media query */
+
+/* Custom Swiper Navigation Arrows */
+.navArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.navArrow:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.navArrowPrev {
+  left: -30px;
+}
+
+.navArrowNext {
+  right: -30px;
+}
+
+.navArrowIcon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Hide default Swiper arrows */
+.swiperContainer :global(.swiper-button-prev),
+.swiperContainer :global(.swiper-button-next) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navArrow {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .navArrowPrev {
+    left: 5px;
+  }
+  
+  .navArrowNext {
+    right: 5px;
+  }
+  
+  .navArrowIcon {
+    width: 20px;
+    height: 20px;
+  }
+}

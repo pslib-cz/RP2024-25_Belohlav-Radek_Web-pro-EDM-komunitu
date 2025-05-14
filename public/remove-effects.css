@@ -15,7 +15,7 @@
 .sectionBackground,
 section,
 main,
-header,
+
 footer,
 [class*="container"],
 [class*="Card"],
@@ -28,6 +28,20 @@ footer,
   border-radius: 0 !important;
   border: none !important;
 }
+.sectionBackground,
+header,
+[class*="container"],
+[class*="Card"],
+[class*="card"],
+[class*="Box"],
+[class*="box"],
+[class*="Panel"],
+[class*="panel"] {
+  background-color: blu !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
 
 /* Remove any overlays */
 *::before,
