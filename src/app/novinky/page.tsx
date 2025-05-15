@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import { AnimatedBackground } from '../../components/AnimatedBackground';
 import { Newsletter } from '../../components/Newsletter';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -155,7 +154,6 @@ export default function Novinky() {
             <h1 className={styles.heroTitle}>Novinky ze světa elektronické hudby</h1>
             <p className={styles.heroSubtitle}>Nejnovější informace o festivalech, releasech a umělcích</p>
           </div>
-          <AnimatedBackground />
         </section>
         
         <section className={styles.newsSection}>

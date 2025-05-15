@@ -1,6 +1,5 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import { AnimatedBackground } from '../../components/AnimatedBackground';
 import { Newsletter } from '../../components/Newsletter';
 import React from 'react';
 import Image from 'next/image';
@@ -249,7 +248,6 @@ export default function DJs() {
             <h1 className={styles.heroTitle}>Objevte svět DJs</h1>
             <p className={styles.heroSubtitle}>Profily nejlepších světových producentů a DJs elektronické hudby</p>
           </div>
-          <AnimatedBackground />
         </section>
         
         <section className={styles.filterSection}>

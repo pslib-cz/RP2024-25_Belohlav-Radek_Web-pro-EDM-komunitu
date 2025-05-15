@@ -1,8 +1,0 @@
-/* Blue background styles */
-html, body {
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  min-height: 100vh !important;
-} 

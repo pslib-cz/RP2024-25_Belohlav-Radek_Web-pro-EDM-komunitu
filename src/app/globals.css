@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-@import url('/theme.css');
 
 :root {
   /* Theme variables are now defined in theme.css */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  --color-primary: #f953c6;
+  --color-secondary: #8a2387;
+  --color-accent: #b91d73;
+  
+  --color-text: var(--color-white);
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+  
+  --color-background: var(--color-black);
+  
+  --gradient-primary: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  --gradient-pink-purple: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 50%, var(--color-secondary) 100%);
 }
 
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  background-image: url('/images/blue-gradient-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 *, *::before, *::after {

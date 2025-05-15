@@ -1,6 +1,5 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import { AnimatedBackground } from '../../components/AnimatedBackground';
 import { Newsletter } from '../../components/Newsletter';
 import React from 'react';
 import Link from 'next/link';
@@ -128,7 +127,6 @@ export default function Kontakt() {
             <h1 className={styles.heroTitle}>Kontaktujte nás</h1>
             <p className={styles.heroSubtitle}>Jsme zde pro všechny vaše dotazy, návrhy a spolupráce</p>
           </div>
-          <AnimatedBackground />
         </section>
         
         <section className={styles.contactSection}>

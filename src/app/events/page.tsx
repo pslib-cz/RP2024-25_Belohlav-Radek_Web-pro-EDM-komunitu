@@ -1,6 +1,5 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import { AnimatedBackground } from '../../components/AnimatedBackground';
 import { Newsletter } from '../../components/Newsletter';
 import React from 'react';
 import Image from 'next/image';
@@ -209,7 +208,6 @@ export default function Events() {
             <h1 className={styles.heroTitle}>Festivaly a Eventy</h1>
             <p className={styles.heroSubtitle}>Objevte ty nejlepší taneční akce po celém světě</p>
           </div>
-          <AnimatedBackground />
         </section>
         
         <section className={styles.eventsSection}>
