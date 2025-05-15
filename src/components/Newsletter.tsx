@@ -1,4 +1,4 @@
-"use client"; // Pro práci s formulářem
+"use client"; 
 
 import React, { useState } from 'react';
 import styles from './Newsletter.module.css';
@@ -23,17 +23,13 @@ export const Newsletter: React.FC<NewsletterProps> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Jednoduchá validace emailu
     if (!email || !email.includes('@') || !email.includes('.')) {
       setError('Prosím zadejte platný e-mail');
       return;
     }
     
-    // Zde by byla logika pro odeslání emailu na server
-    // Simulujeme úspěšné odeslání
     setSuccess(true);
     setError('');
-    // Reset stavu po 5 sekundách
     setTimeout(() => {
       setSuccess(false);
       setEmail('');

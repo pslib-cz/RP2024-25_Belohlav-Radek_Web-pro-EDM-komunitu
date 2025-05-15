@@ -5,7 +5,6 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-// Data pro newsletter
 const newsletter = {
   title: "Buďte v obraze",
   subtitle: "EDM Newsletter",
@@ -13,14 +12,12 @@ const newsletter = {
   buttonText: "Přihlásit se"
 };
 
-// Footer odkazy
 const footerLinks = {
   main: [
     { label: 'Novinky', href: '/novinky' },
     { label: 'DJs', href: '/djs' },
     { label: 'Events', href: '/events' },
     { label: 'Kontakt', href: '/kontakt' },
-    { label: 'Pro média', href: '/pro-media' },
   ],
   info: [
     { label: 'O nás', href: '/o-nas' },
@@ -36,7 +33,6 @@ const footerLinks = {
   ],
 };
 
-// Social media odkazy
 const socialLinks = [
   {
     platform: 'Facebook',
@@ -79,7 +75,6 @@ const socialLinks = [
   },
 ];
 
-// Kontaktní údaje
 const contactInfo = {
   address: {
     company: "EDM World s.r.o.",
@@ -93,7 +88,6 @@ const contactInfo = {
   hours: "Po-Pá: 9:00 - 17:00"
 };
 
-// Oddělení
 const departments = [
   {
     name: "Redakce",

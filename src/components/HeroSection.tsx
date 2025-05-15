@@ -1,4 +1,4 @@
-"use client"; // Add this directive for client-side hooks
+"use client"; 
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -41,7 +41,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             autoPlay
             muted
             loop
-            playsInline // Important for mobile playback
+            playsInline 
           >
             <source src={videoSrc} type="video/mp4" />
           </video>
@@ -62,7 +62,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       )}
 
       <div className={styles.overlay}>
-        {/* Dekorativní prvky - napodobuje konfety a stužky z Tomorrowlandu */}
         <div className={styles.confetti}>
           <span className={`${styles.confettiPiece} ${styles.confetti1}`}></span>
           <span className={`${styles.confettiPiece} ${styles.confetti2}`}></span>

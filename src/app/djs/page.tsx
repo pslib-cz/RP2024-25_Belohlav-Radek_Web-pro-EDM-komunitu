@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-// Mock data pro DJs
 const djs = [
   {
     id: 1,
@@ -138,7 +137,6 @@ const djs = [
   }
 ];
 
-// Data pro filtrování podle zemí
 const countries = [
   { id: "nl", name: "Nizozemsko", flag: "🇳🇱", count: 38 },
   { id: "be", name: "Belgie", flag: "🇧🇪", count: 21 },
@@ -148,7 +146,7 @@ const countries = [
   { id: "se", name: "Švédsko", flag: "🇸🇪", count: 29 },
   { id: "fr", name: "Francie", flag: "🇫🇷", count: 31 },
   { id: "cz", name: "Česká republika", flag: "🇨🇿", count: 18 },
-  { id: "ru", name: "Rusko", flag: "��🇺", count: 23 },
+  { id: "ru", name: "Rusko", flag: "🇷🇺", count: 23 },
   { id: "kr", name: "Jižní Korea", flag: "🇰🇷", count: 8 },
 ];
 
@@ -164,7 +162,6 @@ const genres = [
   { id: "hardstyle", name: "Hardstyle", count: 41 },
 ];
 
-// Data pro newsletter
 const newsletter = {
   title: "Buďte v obraze",
   subtitle: "EDM Newsletter",
@@ -172,14 +169,12 @@ const newsletter = {
   buttonText: "Přihlásit se"
 };
 
-// Footer odkazy
 const footerLinks = {
   main: [
     { label: 'Novinky', href: '/novinky' },
     { label: 'DJs', href: '/djs' },
     { label: 'Events', href: '/events' },
     { label: 'Kontakt', href: '/kontakt' },
-    { label: 'Pro média', href: '/pro-media' },
   ],
   info: [
     { label: 'O nás', href: '/o-nas' },
@@ -195,7 +190,6 @@ const footerLinks = {
   ],
 };
 
-// Social media odkazy
 const socialLinks = [
   {
     platform: 'Facebook',

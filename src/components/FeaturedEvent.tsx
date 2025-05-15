@@ -24,7 +24,6 @@ export const FeaturedEvent: React.FC<FeaturedEventProps> = ({
   ticketLink,
   infoLink,
 }) => {
-  // Combine the local module class with the global background class
   const sectionClasses = `${styles.featuredEvent} sectionBackground`;
 
   return (
@@ -33,7 +32,6 @@ export const FeaturedEvent: React.FC<FeaturedEventProps> = ({
         <h2 className={styles.sectionTitle}>Vybraná událost</h2>
         
         <div className={styles.eventCard}>
-          {/* Left side - Image */}
           <div className={styles.imageContainer}>
             <div className={styles.imageBorder}>
               <Image

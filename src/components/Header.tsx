@@ -14,33 +14,18 @@ const navItems: NavItem[] = [
   { label: 'DJs', href: '/djs' },
   { label: 'Events', href: '/events' },
   { label: 'Kontakt', href: '/kontakt' },
-  { label: 'Pro média', href: '/pro-media' },
 ];
 
 export const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Přidáme detekci prohlížeče
-  const [isSafari, setIsSafari] = useState(false);
-
   useEffect(() => {
-    // Detekce Safari prohlížeče
-    const isSafariBrowser = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    setIsSafari(isSafariBrowser);
-
     const handleScroll = () => {
-      // Snížíme práh, od kterého se header považuje za scrolled
       const isScrolled = window.scrollY > 5;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
-      
-      // Snížíme maximální scroll pro plný efekt
-      const maxScrollForEffect = 100;
-      const progress = Math.min(window.scrollY / maxScrollForEffect, 1);
-      setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -60,10 +45,8 @@ export const Header: React.FC = () => {
     };
   }, [mobileMenuOpen]);
 
-  // Vytvoříme class pro blurnutý header s explicitní kontrolou
   const headerClasses = `${styles.header} ${scrolled ? styles.headerScrolled : ''}`;
 
-  // Používáme blur efekt s velmi lehkým tmavým tónem
   const dynamicHeaderStyle = {
     backdropFilter: `blur(4px)`,
     WebkitBackdropFilter: `blur(4px)`,

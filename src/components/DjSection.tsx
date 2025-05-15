@@ -1,4 +1,4 @@
-"use client"; // For client-side interactivity
+"use client"; 
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -36,7 +36,6 @@ export const DjsSection: React.FC<DjsSectionProps> = ({ title, subtitle, countri
     }
   };
 
-  // Combine the local module class with the global background class
   const sectionClasses = `${styles.djsSection} sectionBackground`;
 
   return (

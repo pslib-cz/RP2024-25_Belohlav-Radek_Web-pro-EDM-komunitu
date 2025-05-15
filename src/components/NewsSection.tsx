@@ -27,7 +27,6 @@ interface NewsSectionProps {
 }
 
 export const NewsSection: React.FC<NewsSectionProps> = ({ title, news, banner }) => {
-  // Combine the local module class with the global background class
   const sectionClasses = `${styles.newsSection} sectionBackground`;
 
   return (
@@ -99,7 +98,6 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ title, news, banner })
           ))}
         </div>
 
-        {/* Banner Advertisement */}
         {banner && (
           <div className={styles.bannerContainer}>
             <div className={styles.banner}>

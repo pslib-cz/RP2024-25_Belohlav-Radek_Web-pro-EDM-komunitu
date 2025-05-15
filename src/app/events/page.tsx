@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-// Mock data pro eventy
 const events = [
   {
     id: 1,
@@ -114,7 +113,6 @@ const events = [
   }
 ];
 
-// Kategorie
 const categories = [
   "Všechny",
   "Festival",
@@ -124,7 +122,6 @@ const categories = [
   "Conference"
 ];
 
-// Data pro newsletter
 const newsletter = {
   title: "Buďte v obraze",
   subtitle: "EDM Newsletter",
@@ -132,14 +129,12 @@ const newsletter = {
   buttonText: "Přihlásit se"
 };
 
-// Footer odkazy
 const footerLinks = {
   main: [
     { label: 'Novinky', href: '/novinky' },
     { label: 'DJs', href: '/djs' },
     { label: 'Events', href: '/events' },
     { label: 'Kontakt', href: '/kontakt' },
-    { label: 'Pro média', href: '/pro-media' },
   ],
   info: [
     { label: 'O nás', href: '/o-nas' },
@@ -155,7 +150,6 @@ const footerLinks = {
   ],
 };
 
-// Social media odkazy
 const socialLinks = [
   {
     platform: 'Facebook',

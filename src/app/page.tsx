@@ -8,7 +8,6 @@ import { Newsletter } from '../components/Newsletter';
 import { Footer } from '../components/Footer';
 import React from 'react';
 
-// Mock data pro novinky
 const news = [
   {
     id: 1,
@@ -39,7 +38,6 @@ const news = [
   }
 ];
 
-// Banner pro reklamu
 const banner = {
   title: "Propagujte svoji událost",
   description: "Hledáte způsob, jak oslovit fanoušky elektronické hudby? Nabízíme reklamní prostor pro vaše eventy, kluby nebo značky.",
@@ -47,7 +45,6 @@ const banner = {
   buttonLink: "/reklama"
 };
 
-// Mock data pro země a DJs
 const countries = [
   { id: "nl", name: "Nizozemsko", flag: "🇳🇱", count: 38 },
   { id: "be", name: "Belgie", flag: "🇧🇪", count: 21 },
@@ -59,7 +56,6 @@ const countries = [
   { id: "cz", name: "Česká republika", flag: "🇨🇿", count: 18 }
 ];
 
-// Mock data pro events - upravené události pro swiper
 const upcomingEvents = [
   {
     id: 1,
@@ -113,7 +109,6 @@ const upcomingEvents = [
   }
 ];
 
-// Data pro newsletter
 const newsletter = {
   title: "Buďte v obraze",
   subtitle: "EDM Newsletter",
@@ -121,7 +116,6 @@ const newsletter = {
   buttonText: "Přihlásit se"
 };
 
-// Social links s ikonami
 const FacebookIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -212,14 +206,12 @@ const socialLinks = [
   },
 ];
 
-// Footer odkazy
 const footerLinks = {
   main: [
     { label: 'Novinky', href: '/novinky' },
     { label: 'DJs', href: '/djs' },
     { label: 'Events', href: '/events' },
     { label: 'Kontakt', href: '/kontakt' },
-    { label: 'Pro média', href: '/pro-media' },
   ],
   info: [
     { label: 'O nás', href: '/o-nas' },

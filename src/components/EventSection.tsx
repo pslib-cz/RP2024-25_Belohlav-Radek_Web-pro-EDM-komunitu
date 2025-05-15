@@ -39,7 +39,6 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
   events,
   newsletter 
 }) => {
-  // Combine the local module class with the global background class
   const sectionClasses = `${styles.eventsSection} sectionBackground`;
   const swiperRef = useRef<SwiperType | null>(null);
 
@@ -68,7 +67,6 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
           </Link>
         </div>
 
-        {/* Custom Navigation Arrows */}
         <div 
           className={`${styles.navArrow} ${styles.navArrowPrev}`}
           onClick={() => swiperRef.current?.slidePrev()}
@@ -105,7 +103,6 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
           </svg>
         </div>
 
-        {/* Swiper Implementation */}
         <Swiper
           modules={[Navigation, Pagination, A11y]} // Add modules
           spaceBetween={30} // Space between slides
@@ -116,17 +113,14 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
             swiperRef.current = swiper;
           }}
           breakpoints={{
-            // when window width is >= 640px
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            // when window width is >= 1024px
             1024: {
               slidesPerView: 3,
               spaceBetween: 30,
             },
-            // when window width is >= 1280px - show 4 if container allows
              1280: {
                slidesPerView: 4,
                spaceBetween: 30,
@@ -135,11 +129,8 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
           className={styles.swiperContainer} // Add a class for potential custom styling
         >
           {events.map((event) => (
-            <SwiperSlide key={event.id} className={styles.swiperSlide}>
-              {/* Existing Event Card Structure */}
-              <div className={styles.eventCard}> 
+            <SwiperSlide key={event.id} className={styles.swiperSlide}>              <div className={styles.eventCard}> 
                 <div className={styles.imageContainer}>
-                  {/* Optional: Link the image to the info page if available */}
                 {event.infoLink ? (
                   <Link href={event.infoLink} passHref legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer"> 
@@ -164,7 +155,6 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
                 <div className={styles.overlay} />
               </div>
               <div className={styles.eventContent}>
-                {/* Optional: Link the title to the info page if available */}
                 {event.infoLink ? (
                    <Link href={event.infoLink} passHref legacyBehavior>
                      <a target="_blank" rel="noopener noreferrer" className={styles.eventTitleLink}>
@@ -198,7 +188,6 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
                      <span>{event.location}</span>
                    </div>
                  </div>
-                 {/* Buttons Container */}
                  <div className={styles.buttonContainer}>
                    {event.infoLink && (
                      <Link href={event.infoLink} passHref legacyBehavior>
@@ -212,12 +201,11 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
                    )}
                  </div>
                 </div>
-              </div> {/* Close eventCard div */}
+              </div> 
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Newsletter Signup */}
         {newsletter && (
           <div className={styles.newsletterContainer}>
             <div className={styles.newsletter}>

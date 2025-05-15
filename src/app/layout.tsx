@@ -16,9 +16,6 @@ export default function RootLayout({
     <html lang="cs">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="stylesheet" href="/theme.css" />
-        <link rel="stylesheet" href="/remove-effects.css" />
-    
       </head>
       <body>
         {children}
