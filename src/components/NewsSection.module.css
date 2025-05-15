@@ -1,16 +1,14 @@
 /* NewsSection.module.css */
 
 .newsSection {
-  padding: 5rem 0; /* Consistent padding with other sections */
-  /* Padding is now handled by the global class or can be added specifically if needed */
-  /* Background styles moved to globals.css */
+  padding: 5rem 0; 
+
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
-  /* z-index is handled by the global class structure */
 }
   
   .header {
@@ -79,7 +77,6 @@
   }
   
   .newsCard {
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 1rem;
     overflow: hidden;
     backdrop-filter: blur(10px);
@@ -91,8 +88,6 @@
   
   .newsCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.08);
   }
   
   .imageContainer {
@@ -192,10 +187,9 @@
     transform: translateX(3px);
   }
   
-  /* Banner Ad styling */
   .bannerContainer {
     margin-top: 4rem;
-    padding: 1px; /* For gradient border effect */
+    padding: 1px; 
     border-radius: 1rem;
     background: linear-gradient(to right, #f953c6, #8a2387);
   }
@@ -255,5 +249,4 @@
   
   .bannerButton:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(45, 212, 191, 0.3);
   }
