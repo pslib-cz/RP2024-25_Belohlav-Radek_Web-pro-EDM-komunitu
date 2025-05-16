@@ -2,12 +2,11 @@
 
 .djsSection {
     padding: 5rem 0;
-    position: relative; /* Keep for z-index context */
-    /* Removed overflow: hidden and background-image */
-    z-index: 1; /* Ensure content is above global background */
+    position: relative; 
+
+    z-index: 1; 
   }
   
-  /* Removed decorative background ::before element */
   
   .container {
     max-width: 1280px;

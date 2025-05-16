@@ -37,7 +37,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background: radial-gradient(ellipse at center, #6a9ec0 0%, #2a5b7a 50%, #1d3e54 100%);
   background-image: url('/images/blue-gradient-bg.jpg') !important;
   background-size: cover;
   background-position: center;
