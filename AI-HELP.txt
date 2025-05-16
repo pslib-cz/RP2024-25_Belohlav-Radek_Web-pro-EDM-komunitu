@@ -1,0 +1,96 @@
+Pridani filtrace do sekce novinek podle kategorie nebo data.
+Vylepseni animaci v Header.module.css pri scrollu aby byly plynulejsi na slabsim hardwaru.
+Testovani pristunosti komponenty Footer.tsx pro screen readery.
+Zvazeni alternativnich layoutu pro NewsSection.module.css na mobilu – carousel vs. grid?
+Jak pridat loading states (skeleton screens) do komponent nacitajicich data?
+Je FeaturedEvent.tsx dostatecne flexibilni pro ruzne typy udalosti?
+Jak integrovat realna data do upcomingEvents v page.tsx?
+Optimalizace velikosti obrazku v HeroSection.tsx bez ztraty kvality.
+Zvyseni kontrastu textu v Footer.module.css pro lepsi citelnost.
+Pridej ARIA atributy do EventsSlider.tsx pro navigacni tlacitka.
+Jak resit lazy loading pro obrazky v NewsSection.tsx?
+Zvazeni pouziti useReducer misto vice useState v Header.tsx.
+Jak by mohla vypadat detailni stranka pro DJ z DjsSection.tsx?
+Implementace error handlingu pro formular v Newsletter.tsx.
+Reseni pro "cumulative layout shift" (CLS) v HeroSection.tsx.
+Jak zlepsit SEO pro dynamicky generovane stranky eventu?
+Vytvoreni sdilenych komponent pro tlacitka pouzita napric webem.
+Zvazeni pouziti globalniho stavu pro mobileMenuOpen v Header.tsx.
+Jak implementovat "view all" odkaz v EventsSlider.tsx funkcne?
+Testovani DjsSection.tsx s prazdnym seznamem DJs pro nejakou zemi.
+Pridani moznosti sdileni novinek na socialni site z NewsSection.tsx.
+Jak by fungoval vyhledavaci panel z Header.tsx? Fulltext nebo filtrovani?
+Zvazeni animaci pri zobrazeni FeaturedEvent.tsx (napr. on scroll).
+Jak optimalizovat confettiPiece animace v HeroSection.module.css pro vykon?
+Je dropdown v languageSelector v Header.tsx pristupny z klavesnice?
+Pridej "no results" stav pro filtrovani v NewsSection.tsx.
+Jak resit routing pro detailni stranky novinek a eventu?
+Vylepseni checkScrollButtons logiky v EventsSlider.tsx pro presnost.
+Zvazeni pouziti Intersection Observer API pro animace on scroll.
+Jaky format dat by byl nejlepsi pro countries v DjsSection.tsx z CMS?
+Pridej moznost "unsubscribe" do Newsletter.tsx (i kdyz jen vizualne).
+Jak by vypadal design stranky /kontakt na zaklade stylu Header.tsx?
+Mohl by FeaturedEvent.tsx mit video misto obrazku?
+Optimalizace CSS v EventsSlider.module.css – jsou vsechny styly nutne?
+Jak resit ruzne delky textu v kartach NewsSection.tsx aby layout zustal konzistentni?
+Pridej testy pro zakladni funkcionalitu Header.tsx (napr. otevirani menu).
+Jakym zpusobem by se mohla HeroSection.tsx menit pro ruzne kampane?
+Zvazeni pouziti CSS custom properties pro temovani v globals.css.
+Jak by se DjsSection.tsx chovala pri velkem poctu zemi? Virtualizace?
+Pridej "terms and conditions" checkbox do Newsletter.tsx pokud chybi.
+Jak zobrazit pocet komentaru u novinky v NewsSection.tsx?
+Vylepseni navigace v mobilnim menu v Header.tsx – pridani ikon?
+Jaky efekt by mohl mit FeaturedEvent.tsx pri hoveru na obrazek?
+Je EventsSlider.tsx optimalizovan pro server-side rendering (pokud by mel dynamicka data)?
+Jak resit stav kdyz obrazek v NewsSection.tsx nebo HeroSection.tsx selze nacist?
+Pridej moznost zmeny poctu zobrazenych eventu v EventsSlider.tsx.
+Jak by DjsSection.tsx mohla vizualizovat popularitu DJů (napr. velikosti fotky)?
+Vylepseni chybovych hlasek ve formulari Newsletter.tsx.
+Jak integrovat analytiku (napr. Google Analytics) do layout.tsx?
+Zvazeni A/B testovani ruznych verzi CTA tlacitka v HeroSection.tsx.
+Jak by se v Header.tsx resil prihlaseny uzivatel?
+Pridej placeholder pro obrazky v NewsSection.tsx behem nacitani.
+Jak by FeaturedEvent.tsx zobrazoval vice terminu pro stejnou udalost?
+Optimalizace dotazu na data pro EventsSlider.tsx pokud by jich bylo mnoho.
+Jak resit cacheovani statickych assetu (obrazky, fonty) v public/?
+Pridej tooltipy k ikonam v Footer.tsx pro lepsi pochopeni.
+Jak by DjsSection.tsx mohla umoznit uzivatelum hodnotit DJs?
+Vylepseni searchButtonMobile v Header.tsx – otevreni modalu nebo presmerovani?
+Jak by HeroSection.tsx reagovala na zmenu jazyka (texty, obrazky)?
+Je kod v Newsletter.tsx dostatecne zabezpecen proti spamu?
+Jak by NewsSection.tsx zobrazovala "souvisejici clanky"?
+Zvazeni pridani "dark mode/light mode" prepinace do Header.tsx.
+Jak by FeaturedEvent.tsx zobrazoval informace o vstupenkach (ceny, dostupnost)?
+Mohl by EventsSlider.tsx mit autoplay funkci? Bylo by to dobre pro UX?
+Jaky je dopad pouziti dangerouslySetInnerHTML v HeroSection.tsx na bezpecnost?
+Pridej validaci delky textu pro inputy v Newsletter.tsx.
+Jak by DjsSection.tsx resila DJs bez prirazene zeme?
+Vylepseni logiky pro headerClasses v Header.tsx – vice stavu scrollu?
+Jak zobrazit "countdown" do zacatku udalosti v FeaturedEvent.tsx?
+Optimalizace pro tisk stranky novinek z NewsSection.tsx.
+Jak by HeroSection.tsx mohla integrovat interaktivni 3D prvek?
+Pridej moznost "zapamatovat si" vybrany jazyk v Header.tsx (localStorage).
+Jak by se EventsSlider.tsx choval pokud by nebyly zadne udalosti?
+Vylepseni vzhledu languageDropdown v Header.tsx na mobilnich zarizenich.
+Jak by NewsSection.tsx zvladala paginaci pokud by bylo mnoho clanku?
+Zvazeni pouziti CSS-in-JS reseni misto CSS Modules pro nektere dynamicke styly.
+Jak by DjsSection.tsx zobrazovala zanry DJs? Barevne stitky?
+Pridej "progress bar" k EventsSlider.tsx ukazujici aktualni pozici.
+Jak by FeaturedEvent.tsx mohl zobrazit fotogalerii z minulych rocniku?
+Testovani vykonu animaci v HeroSection.module.css na starsich mobilech.
+Jak by se do Header.tsx pridala notifikacni ikonka?
+Zvazeni pouziti WebP formatu pro vsechny obrazky kvuli optimalizaci.
+Jak by Newsletter.tsx mohl segmentovat uzivatele podle zajmu?
+Pridej animaci pri rozbalovani/sbalovani DJ listu v DjsSection.tsx.
+Jak by NewsSection.tsx mohla mit funkci "ulozit clanek na pozdeji"?
+Vylepseni hover efektu na navLink v Header.module.css – vice kreativni?
+Jak by FeaturedEvent.tsx mohl integrovat mapu mista konani?
+Optimalizace useEffect hooku v Header.tsx aby se nespoustel zbytecne.
+Pridej moznost zobrazeni eventu v EventsSlider.tsx jako seznam misto karet.
+Jak by DjsSection.tsx umoznila filtrovani DJs podle jmena?
+Zvazeni pridani "social proof" (napr. pocet odberatelu) do Newsletter.tsx.
+Jak by HeroSection.tsx mohla mit vice variant hlavniho nadpisu pro A/B testovani?
+Pridej "scroll to top" tlacitko ktere se objevi po scrollnuti.
+Jak by Footer.tsx mohl byt dynamickyjsi (napr. nejnovejsi tweet)?
+Proc to porad nefunguje?! (klasicky vyvojarsky povzdech)
+Doufám, že tento obsáhlý seznam ti poskytne dostatek materiálu pro přemýšlení a případné další dotazy!
