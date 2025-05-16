@@ -1,96 +1,322 @@
-Pridani filtrace do sekce novinek podle kategorie nebo data.
-Vylepseni animaci v Header.module.css pri scrollu aby byly plynulejsi na slabsim hardwaru.
-Testovani pristunosti komponenty Footer.tsx pro screen readery.
-Zvazeni alternativnich layoutu pro NewsSection.module.css na mobilu – carousel vs. grid?
-Jak pridat loading states (skeleton screens) do komponent nacitajicich data?
-Je FeaturedEvent.tsx dostatecne flexibilni pro ruzne typy udalosti?
-Jak integrovat realna data do upcomingEvents v page.tsx?
-Optimalizace velikosti obrazku v HeroSection.tsx bez ztraty kvality.
-Zvyseni kontrastu textu v Footer.module.css pro lepsi citelnost.
-Pridej ARIA atributy do EventsSlider.tsx pro navigacni tlacitka.
-Jak resit lazy loading pro obrazky v NewsSection.tsx?
-Zvazeni pouziti useReducer misto vice useState v Header.tsx.
-Jak by mohla vypadat detailni stranka pro DJ z DjsSection.tsx?
-Implementace error handlingu pro formular v Newsletter.tsx.
-Reseni pro "cumulative layout shift" (CLS) v HeroSection.tsx.
-Jak zlepsit SEO pro dynamicky generovane stranky eventu?
-Vytvoreni sdilenych komponent pro tlacitka pouzita napric webem.
-Zvazeni pouziti globalniho stavu pro mobileMenuOpen v Header.tsx.
-Jak implementovat "view all" odkaz v EventsSlider.tsx funkcne?
-Testovani DjsSection.tsx s prazdnym seznamem DJs pro nejakou zemi.
-Pridani moznosti sdileni novinek na socialni site z NewsSection.tsx.
-Jak by fungoval vyhledavaci panel z Header.tsx? Fulltext nebo filtrovani?
-Zvazeni animaci pri zobrazeni FeaturedEvent.tsx (napr. on scroll).
-Jak optimalizovat confettiPiece animace v HeroSection.module.css pro vykon?
-Je dropdown v languageSelector v Header.tsx pristupny z klavesnice?
-Pridej "no results" stav pro filtrovani v NewsSection.tsx.
-Jak resit routing pro detailni stranky novinek a eventu?
-Vylepseni checkScrollButtons logiky v EventsSlider.tsx pro presnost.
-Zvazeni pouziti Intersection Observer API pro animace on scroll.
-Jaky format dat by byl nejlepsi pro countries v DjsSection.tsx z CMS?
-Pridej moznost "unsubscribe" do Newsletter.tsx (i kdyz jen vizualne).
-Jak by vypadal design stranky /kontakt na zaklade stylu Header.tsx?
-Mohl by FeaturedEvent.tsx mit video misto obrazku?
-Optimalizace CSS v EventsSlider.module.css – jsou vsechny styly nutne?
-Jak resit ruzne delky textu v kartach NewsSection.tsx aby layout zustal konzistentni?
-Pridej testy pro zakladni funkcionalitu Header.tsx (napr. otevirani menu).
-Jakym zpusobem by se mohla HeroSection.tsx menit pro ruzne kampane?
-Zvazeni pouziti CSS custom properties pro temovani v globals.css.
-Jak by se DjsSection.tsx chovala pri velkem poctu zemi? Virtualizace?
-Pridej "terms and conditions" checkbox do Newsletter.tsx pokud chybi.
-Jak zobrazit pocet komentaru u novinky v NewsSection.tsx?
-Vylepseni navigace v mobilnim menu v Header.tsx – pridani ikon?
-Jaky efekt by mohl mit FeaturedEvent.tsx pri hoveru na obrazek?
-Je EventsSlider.tsx optimalizovan pro server-side rendering (pokud by mel dynamicka data)?
-Jak resit stav kdyz obrazek v NewsSection.tsx nebo HeroSection.tsx selze nacist?
-Pridej moznost zmeny poctu zobrazenych eventu v EventsSlider.tsx.
-Jak by DjsSection.tsx mohla vizualizovat popularitu DJů (napr. velikosti fotky)?
-Vylepseni chybovych hlasek ve formulari Newsletter.tsx.
-Jak integrovat analytiku (napr. Google Analytics) do layout.tsx?
-Zvazeni A/B testovani ruznych verzi CTA tlacitka v HeroSection.tsx.
-Jak by se v Header.tsx resil prihlaseny uzivatel?
-Pridej placeholder pro obrazky v NewsSection.tsx behem nacitani.
-Jak by FeaturedEvent.tsx zobrazoval vice terminu pro stejnou udalost?
-Optimalizace dotazu na data pro EventsSlider.tsx pokud by jich bylo mnoho.
-Jak resit cacheovani statickych assetu (obrazky, fonty) v public/?
-Pridej tooltipy k ikonam v Footer.tsx pro lepsi pochopeni.
-Jak by DjsSection.tsx mohla umoznit uzivatelum hodnotit DJs?
-Vylepseni searchButtonMobile v Header.tsx – otevreni modalu nebo presmerovani?
-Jak by HeroSection.tsx reagovala na zmenu jazyka (texty, obrazky)?
-Je kod v Newsletter.tsx dostatecne zabezpecen proti spamu?
-Jak by NewsSection.tsx zobrazovala "souvisejici clanky"?
-Zvazeni pridani "dark mode/light mode" prepinace do Header.tsx.
-Jak by FeaturedEvent.tsx zobrazoval informace o vstupenkach (ceny, dostupnost)?
-Mohl by EventsSlider.tsx mit autoplay funkci? Bylo by to dobre pro UX?
-Jaky je dopad pouziti dangerouslySetInnerHTML v HeroSection.tsx na bezpecnost?
-Pridej validaci delky textu pro inputy v Newsletter.tsx.
-Jak by DjsSection.tsx resila DJs bez prirazene zeme?
-Vylepseni logiky pro headerClasses v Header.tsx – vice stavu scrollu?
-Jak zobrazit "countdown" do zacatku udalosti v FeaturedEvent.tsx?
-Optimalizace pro tisk stranky novinek z NewsSection.tsx.
-Jak by HeroSection.tsx mohla integrovat interaktivni 3D prvek?
-Pridej moznost "zapamatovat si" vybrany jazyk v Header.tsx (localStorage).
-Jak by se EventsSlider.tsx choval pokud by nebyly zadne udalosti?
-Vylepseni vzhledu languageDropdown v Header.tsx na mobilnich zarizenich.
-Jak by NewsSection.tsx zvladala paginaci pokud by bylo mnoho clanku?
-Zvazeni pouziti CSS-in-JS reseni misto CSS Modules pro nektere dynamicke styly.
-Jak by DjsSection.tsx zobrazovala zanry DJs? Barevne stitky?
-Pridej "progress bar" k EventsSlider.tsx ukazujici aktualni pozici.
-Jak by FeaturedEvent.tsx mohl zobrazit fotogalerii z minulych rocniku?
-Testovani vykonu animaci v HeroSection.module.css na starsich mobilech.
-Jak by se do Header.tsx pridala notifikacni ikonka?
-Zvazeni pouziti WebP formatu pro vsechny obrazky kvuli optimalizaci.
-Jak by Newsletter.tsx mohl segmentovat uzivatele podle zajmu?
-Pridej animaci pri rozbalovani/sbalovani DJ listu v DjsSection.tsx.
-Jak by NewsSection.tsx mohla mit funkci "ulozit clanek na pozdeji"?
-Vylepseni hover efektu na navLink v Header.module.css – vice kreativni?
-Jak by FeaturedEvent.tsx mohl integrovat mapu mista konani?
-Optimalizace useEffect hooku v Header.tsx aby se nespoustel zbytecne.
-Pridej moznost zobrazeni eventu v EventsSlider.tsx jako seznam misto karet.
-Jak by DjsSection.tsx umoznila filtrovani DJs podle jmena?
-Zvazeni pridani "social proof" (napr. pocet odberatelu) do Newsletter.tsx.
-Jak by HeroSection.tsx mohla mit vice variant hlavniho nadpisu pro A/B testovani?
-Pridej "scroll to top" tlacitko ktere se objevi po scrollnuti.
-Jak by Footer.tsx mohl byt dynamickyjsi (napr. nejnovejsi tweet)?
-Proc to porad nefunguje?! (klasicky vyvojarsky povzdech)
-Doufám, že tento obsáhlý seznam ti poskytne dostatek materiálu pro přemýšlení a případné další dotazy!
+Vylepšení UX EventsSlider.tsx na dotykových zařízeních.
+.eventsSlider { scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.eventCard { scroll-snap-align: start; min-width: 80%; }
+@media (min-width: 600px) { .eventCard { min-width: 280px; } }
+Další jemné dynamické efekty pro HeroSection.module.css.
+.subtitle { animation: fadeInDelayed 1.2s ease-out 0.7s backwards; }
+@keyframes fadeInDelayed { from { opacity: 0; } to { opacity: 1; } }
+Refaktoring Header.tsx pro čitelnost a méně re-renderů.
+// const navLinks = useMemo(() => navItems.map(item => <Link key={item.label} />), [navItems]);
+// Místo přímého mapování v JSX, pokud by navItems bylo dynamické. V tvém případě je konstantní, takže to není nutné.
+Optimalizace načítání pro DjsSection s 1000+ DJs.
+// const { data: djsForCountry, fetchNextPage, hasNextPage, isFetchingNextPage } = useInfiniteQuery(
+// ['djs', activeCountry],
+// ({ pageParam = 0 }) => fetchDjsApi(activeCountry, pageParam),
+// { getNextPageParam: (lastPage) => lastPage.nextCursor }
+// );
+Personalizace obsahu v Newsletter.tsx dle preferencí.
+// const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+// // logika pro aktualizaci pole preferencí ve stavu
+// };
+Filtrace novinek v NewsSection.tsx podle kategorie/data.
+// const [activeFilters, setActiveFilters] = useState({ category: '', dateOrder: 'desc' });
+// const applyFilters = (newsItems) => { /* logika filtrování a řazení */ return filteredItems; };
+Plynulejší animace v Header.module.css při scrollu na slabším HW.
+.header { will-change: transform, opacity; /* Pokud by se animovaly tyto vlastnosti */ }
+Testování přístupnosti Footer.tsx pro screen readery.
+// Zkontrolovat, zda všechny odkazy <Link> i externí <a> mají smysluplný text nebo aria-label.
+// <Link href="/o-nas" aria-label="Více o společnosti EDM World">O nás</Link>
+Alternativní layouty pro NewsSection.module.css na mobilu: carousel vs. grid?
+Současný jednosloupcový grid je jednoduchý. Carousel by vyžadoval více JS, zvážit UX dopad.
+Přidání loading states (skeleton screens) do komponent načítajících data.
+.skeletonText { background-color: #3a3a3a; border-radius: 4px; height: 1em; margin-bottom: 0.5em; animation: pulseSkeleton 1.5s infinite; }
+@keyframes pulseSkeleton { 50% { opacity: 0.6; } }
+Flexibilita FeaturedEvent.tsx pro různé typy událostí.
+// interface FeaturedEventProps { /* ... */ contentType: 'event' | 'announcement' | 'album'; }
+// {contentType === 'event' && <div className={styles.artistsContainer}>...</div>}
+Integrace reálných dat do upcomingEvents v page.tsx.
+// page.tsx (Server Component)
+// const upcomingEventsResponse = await fetch('your-api/events/upcoming');
+// const upcomingEventsData: Event[] = await upcomingEventsResponse.json();
+Optimalizace velikosti obrázků v HeroSection.tsx bez ztráty kvality.
+<Image src={imageSrc} alt="Hero" fill priority quality={70} sizes="100vw" />
+Zvýšení kontrastu textu v Footer.module.css.
+.legalLink { color: rgba(255, 255, 255, 0.75); } /* původně inherit od .bottomBar s 0.6 */
+Přidání ARIA atributů do EventsSlider.tsx pro navigační tlačítka.
+// V EventsSlider.tsx:
+// const sliderContentId = useId(); // React 18+
+// <button aria-controls={sliderContentId} disabled={!canScrollLeft}>...</button>
+// <div id={sliderContentId} className={styles.eventsSlider}>...</div>
+Řešení lazy loadingu pro obrázky v NewsSection.tsx.
+Komponenta <Image> z next/image v NewsSection.tsx to již řeší automaticky (default loading="lazy").
+Zvážení useReducer místo více useState v Header.tsx.
+Pokud by scrolled a mobileMenuOpen (a případný isSafari, scrollProgress) měly komplexnější provázanou logiku, useReducer by byl vhodný. Aktuálně useState stačí.
+Návrh detailní stránky pro DJ z DjsSection.tsx.
+Layout: velká fotka DJ, jméno, země, žánry, bio, sekce pro tracky (embedded přehrávače), kalendář vystoupení.
+Implementace error handlingu pro formulář v Newsletter.tsx.
+error stav v Newsletter.tsx již existuje. Je třeba ho plnit smysluplnými zprávami, např. z API odpovědi.
+// catch (err) { setError(err.message || 'Neznámá chyba serveru'); }
+Řešení pro "cumulative layout shift" (CLS) v HeroSection.tsx.
+V HeroSection.tsx <Image> používá priority, což pomáhá. Pokud je video, mělo by mít atributy width a height nebo CSS aspect-ratio.
+Zlepšení SEO pro dynamicky generované stránky eventů.
+// app/events/[slug]/page.tsx
+// export async function generateMetadata({ params }) {
+// const event = await getEventBySlug(params.slug);
+// return { title: event.name, description: event.summary };
+// }
+Vytvoření sdílených komponent pro tlačítka použitá napříč webem.
+// components/ui/Button.tsx
+// export const Button = ({ children, variant = 'primary', ...props }) => (
+// <button className={${styles.btn} ${styles[variant]}} {...props}>{children}</button>
+// );
+Zvážení globálního stavu pro mobileMenuOpen v Header.tsx.
+Pokud by např. <main> obsah potřeboval vědět, zda je menu otevřené (pro inert atribut nebo posunutí), pak ano.
+Implementace "view all" odkazu v EventsSlider.tsx funkčně.
+Již implementováno jako <Link href="/calendar" ...>CALENDAR</Link>.
+Testování DjsSection.tsx s prázdným seznamem DJs pro nějakou zemi.
+V DjsSection.tsx je emptyState, ale text "Seznam DJs se načítá..." by se měl změnit na "Žádní DJs nenalezeni" pokud je pole prázdné po načtení.
+Přidání možnosti sdílení novinek na sociální sítě z NewsSection.tsx.
+// const shareUrl = https://yourdomain.com/novinky/${item.slug};
+// <a href={https://api.whatsapp.com/send?text=${encodeURIComponent(item.title + " " + shareUrl)}}>Sdílet na WhatsApp</a>
+Jak by fungoval vyhledávací panel z Header.tsx? Fulltext nebo filtrování?
+Nejpravděpodobněji přesměrování na stránku /search?q=QUERY, kde by proběhlo fulltextové vyhledávání na serveru.
+Zvážení animací při zobrazení FeaturedEvent.tsx (např. on scroll).
+/* FeaturedEvent.module.css /
+/ .eventCard.in-view { animation: popIn 0.5s cubic-bezier(.25,.8,.25,1) forwards; }
+@keyframes popIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } } */
+Optimalizace confettiPiece animace v HeroSection.module.css pro výkon.
+Omezit počet prvků. Použít transform a opacity. will-change je již dobrý krok.
+Je dropdown v languageSelector v Header.tsx přístupný z klávesnice?
+Ne, aktuální CSS řešení na :hover to neumožňuje. Vyžaduje JS pro focus management a aria-expanded.
+Přidání "no results" stavu pro filtrování v NewsSection.tsx.
+// if (isLoading) return <SkeletonCards />;
+// if (!isLoading && filteredNews.length === 0) return <p>Nebyly nalezeny žádné novinky.</p>;
+Řešení routingu pro detailní stránky novinek a eventů.
+V App Routeru: app/novinky/[slug]/page.tsx, app/events/[eventId]/page.tsx.
+Vylepšení checkScrollButtons logiky v EventsSlider.tsx pro přesnost.
+// const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
+// setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1); // Místo -10, přesnější
+Zvážení Intersection Observer API pro animace on scroll.
+Ideální pro spouštění CSS animací, když se prvek dostane do viewportu, šetří výkon.
+Jaký formát dat by byl nejlepší pro countries v DjsSection.tsx z CMS?
+// { "id": "nl", "name": "Netherlands", "flagEmoji": "🇳🇱", "djCount": 150 }
+// Seznam DJs pro zemi by se načítal až po kliknutí na API endpoint /api/djs?country=nl
+Přidání možnosti "unsubscribe" do Newsletter.tsx (i když jen vizuálně).
+// <p className={styles.unsubscribeText}>Nechcete již dostávat novinky? <Link href="/unsubscribe">Odhlásit zde</Link>.</p>
+Jak by vypadal design stránky /kontakt na základě stylu Header.tsx?
+Tmavé pozadí, gradientní nadpisy, zaoblené inputy s backdrop-filter, tlačítko ve stylu languageButton.
+Mohl by FeaturedEvent.tsx mít video místo obrázku?
+// {featuredEventData.videoSrc ? <video src={featuredEventData.videoSrc} /> : <Image src={featuredEventData.image} />}
+Optimalizace CSS v EventsSlider.module.css – jsou všechny styly nutné?
+Např. navButton::after efekt je komplexní, zvážit zjednodušení, pokud by způsoboval problémy.
+Jak řešit různé délky textu v kartách NewsSection.tsx aby layout zůstal konzistentní?
+.excerpt { /* v NewsSection.module.css /
+display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+min-height: calc(1.6em * 3); / 1.6em je line-height, 3 je počet řádků */
+}
+Přidání testů pro základní funkcionalitu Header.tsx (např. otevírání menu).
+// test('Header mobile menu toggles correctly', () => {
+// render(<Header />);
+// const menuButton = screen.getByLabelText('Open menu');
+// fireEvent.click(menuButton);
+// expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
+// });
+Jakým způsobem by se mohla HeroSection.tsx měnit pro různé kampaně?
+Přes props (již tak je). Na page.tsx by se dynamicky vybírala data pro HeroSection podle aktuální kampaně.
+Zvážení použití CSS custom properties pro temování v globals.css.
+globals.css již definuje --color-primary atd. Toto lze rozšířit pro více témat.
+Jak by se DjsSection.tsx chovala při velkém počtu zemí? Virtualizace?
+Pro země spíše vyhledávací filtr nebo "načíst více". Virtualizace pro seznam DJs uvnitř aktivní země.
+Přidání "terms and conditions" checkboxu do Newsletter.tsx pokud chybí.
+V Newsletter.tsx je checkbox pro souhlas se zpracováním údajů. Lze přidat další pro obchodní podmínky.
+Jak zobrazit počet komentářů u novinky v NewsSection.tsx?
+// <div className={styles.metaInfo}><CommentIcon /> {item.commentCount || 0}</div>
+Vylepšení navigace v mobilním menu v Header.tsx – přidání ikon?
+// <Link href={item.href} className={styles.navLinkMobile}>
+// {item.icon && <span className={styles.navIcon}>{item.icon}</span>} {item.label}
+// </Link>
+Jaký efekt by mohl mít FeaturedEvent.tsx při hoveru na obrázek?
+Již má transform: scale(1.05);. Další možností je přidání jemného overlaye s textem nebo ikonou.
+Je EventsSlider.tsx optimalizován pro server-side rendering (pokud by měl dynamická data)?
+EventsSlider.tsx je "use client" komponenta kvůli useRef a useState. Data by se předávala jako props z nadřazené Server Component.
+Jak řešit stav když obrázek v NewsSection.tsx nebo HeroSection.tsx selže načíst?
+// <Image onError={(e) => { e.currentTarget.style.display = 'none'; /* nebo zobrazit placeholder div */ }} />
+Přidání možnosti změny počtu zobrazených eventů v EventsSlider.tsx.
+Implementovat select pro výběr počtu (3, 4, 5) a upravit logiku scrollBy a slidesPerView (pokud by se používal Swiper, jinak vlastní logika).
+Jak by DjsSection.tsx mohla vizualizovat popularitu DJů (např. velikosti fotky)?
+/* .djLink img { transform: scale(calc(1 + var(--dj-popularity-factor, 0) * 0.2)); } /
+/ --dj-popularity-factor by bylo 0 až 1 */
+Vylepšení chybových hlášek ve formuláři Newsletter.tsx.
+Místo generického setError('...') by se používaly specifické klíče pro chyby a lokalizované zprávy.
+Jak integrovat analytiku (např. Google Analytics) do layout.tsx?
+// V layout.tsx
+// <Script strategy="afterInteractive" src={https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}} />
+// <Script id="google-analytics-config" strategy="afterInteractive">
+// {window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');}
+// </Script>
+Zvážení A/B testování různých verzí CTA tlačítka v HeroSection.tsx.
+Implementovat logiku (nebo použít nástroj), která by náhodně zobrazovala variantu A nebo B a sledovala konverze.
+Jak by se v Header.tsx řešil přihlášený uživatel?
+// const { data: session } = useSession(); // Např. s NextAuth.js
+// {session ? <div>Ahoj, {session.user.name}</div> : <Link href="/api/auth/signin">Přihlásit</Link>}
+Přidání placeholderu pro obrázky v NewsSection.tsx během načítání.
+NewsSection.tsx již používá <Image>. placeholder="blur" s blurDataURL je dobrá volba.
+Jak by FeaturedEvent.tsx zobrazoval více termínů pro stejnou událost?
+// {event.dates && Array.isArray(event.dates) && event.dates.length > 1 ? (
+// <div className={styles.multipleDates}>Další termíny: {event.dates.slice(1).join(', ')}</div>
+// ) : null}
+Optimalizace dotazů na data pro EventsSlider.tsx pokud by jich bylo mnoho.
+API by mělo podporovat paginaci (?limit=X&offset=Y) a filtrování.
+Jak řešit cacheování statických assetů (obrázky, fonty) v public/?
+Next.js to řeší automaticky pomocí Cache-Control hlaviček a hashování souborů v produkčním buildu.
+Přidání tooltipů k ikonám v Footer.tsx pro lepší pochopení.
+<a href={link.href} title={EDM World na ${link.platform}} aria-label={link.platform}>{link.icon}</a>
+Jak by DjsSection.tsx mohla umožnit uživatelům hodnotit DJs?
+Přidat hvězdičkový systém (např. 5 hvězdiček) a API endpoint pro uložení hodnocení spojeného s ID uživatele a DJ.
+Vylepšení searchButtonMobile v Header.tsx – otevření modalu nebo přesměrování?
+Pro mobilní UX je často lepší modal, který překryje obsah, než přesměrování na novou stránku pro vyhledávání.
+// const [searchModalOpen, setSearchModalOpen] = useState(false);
+// {searchModalOpen && <SearchModal onClose={() => setSearchModalOpen(false)} />}
+Jak by HeroSection.tsx reagovala na změnu jazyka (texty, obrazky)?
+Texty (title, subtitle, buttonText) by se načítaly z i18n souborů. imageSrc by mohl být také jazykově specifický, pokud obsahuje text.
+Je kód v Newsletter.tsx dostatečně zabezpečen proti spamu?
+Klientská validace nestačí. Server-side validace je nutná. Zvážit reCAPTCHA nebo honeypot pole.
+<input type="text" name="bot-field" style={{display: 'none'}} /> {/* Honeypot */}
+Jak by NewsSection.tsx zobrazovala "související články"?
+Pod detailem článku by se na základě tagů/kategorií aktuálního článku načetly podobné články.
+Zvážení přidání "dark mode/light mode" přepínače do Header.tsx.
+Vyžaduje implementaci theme providera (např. next-themes) a CSS proměnné pro barvy obou témat.
+// const { theme, setTheme } = useTheme();
+// <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+// {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+// </button>
+Jak by FeaturedEvent.tsx zobrazoval informace o vstupenkách (ceny, dostupnost)?
+// <div className={styles.ticketInfo}>
+// <p>Cena od: <strong>{event.priceRange || 'N/A'}</strong></p>
+// <p>Stav: <span className={event.isSoldOut ? styles.soldOut : styles.available}>{event.isSoldOut ? 'Vyprodáno' : 'V prodeji'}</span></p>
+// </div>
+Mohl by EventsSlider.tsx mít autoplay funkci? Bylo by to dobré pro UX?
+Technicky možné s useEffect a setInterval. Pro UX může být rušivé, pokud ano, tak s jasnou možností pauzy.
+Jaký je dopad použití dangerouslySetInnerHTML v HeroSection.tsx na bezpečnost?
+V HeroSection.tsx je použit pro title. Pokud je title statický řetězec nebo pochází z důvěryhodného, sanitizovaného zdroje (např. CMS, kde editor nemůže vkládat skripty), riziko je nízké. Jinak je to XSS zranitelnost.
+Přidání validace délky textu pro inputy v Newsletter.tsx.
+// const validateEmail = (email) => {
+// if (email.length < 5) return "Email je příliš krátký.";
+// if (email.length > 100) return "Email je příliš dlouhý.";
+// // ... další validace ...
+// return "";
+// }
+Jak by DjsSection.tsx řešila DJs bez přiřazené země?
+Mohla by existovat speciální kategorie "Mezinárodní" nebo "Neznámá země", nebo by se tito DJs nezobrazovali v tomto přehledu.
+Vylepšení logiky pro headerClasses v Header.tsx – více stavů scrollu?
+V Header.tsx je jen scrolled (true/false). Pro více stavů:
+// const scrollY = window.scrollY;
+// if (scrollY > 200) setHeaderVariant('minimal');
+// else if (scrollY > 5) setHeaderVariant('scrolled');
+// else setHeaderVariant('top');
+Jak zobrazit "countdown" do začátku události v FeaturedEvent.tsx?
+// const [countdown, setCountdown] = useState('');
+// useEffect(() => {
+// const interval = setInterval(() => { /* ... logika pro výpočet a formátování času ... */ setCountdown(formattedTime); }, 1000);
+// return () => clearInterval(interval);
+// }, [event.startTime]);
+// {countdown && <div className={styles.countdown}>{countdown}</div>}
+Optimalizace pro tisk stránky novinek z NewsSection.tsx.
+@media print {
+.newsSection .header, .newsSection .bannerContainer, .footer { display: none; }
+.newsCard { border: 1px solid #ccc; margin-bottom: 1cm; }
+a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}
+Jak by HeroSection.tsx mohla integrovat interaktivní 3D prvek?
+Pomocí knihovny jako @react-three/fiber a @react-three/drei pro snadnou integraci Three.js.
+// import { Canvas } from '@react-three/fiber';
+// <div className={styles.threeContainer}><Canvas><MyCool3DScene /></Canvas></div>
+Přidání možnosti "zapamatovat si" vybraný jazyk v Header.tsx (localStorage).
+// const [selectedLang, setSelectedLang] = useState('cz');
+// useEffect(() => { const lang = localStorage.getItem('edm-lang'); if (lang) setSelectedLang(lang); }, []);
+// const changeLanguage = (lang: string) => { setSelectedLang(lang); localStorage.setItem('edm-lang', lang); /* ... logika i18n ... */ };
+Jak by se EventsSlider.tsx choval pokud by nebyly žádné události?
+Měl by zobrazit zprávu, např. "Aktuálně nejsou naplánovány žádné události."
+// if (!events || events.length === 0) return <p className={styles.noEventsMessage}>Žádné události k zobrazení.</p>;
+Vylepšení vzhledu languageDropdown v Header.tsx na mobilních zařízeních.
+languageDropdown by se mohl stát součástí mobileMenuOverlay nebo se zobrazit jako modal/větší select.
+/* V Header.module.css @media (max-width: 768px) /
+/ .languageSelector .languageDropdown { display: none; } /
+/ Místo toho mít select v .mobileActions */
+Jak by NewsSection.tsx zvládala paginaci pokud by bylo mnoho článků?
+Přidat useState pro currentPage a tlačítka "Další"/"Předchozí".
+// const [currentPage, setCurrentPage] = useState(1);
+// const newsPerPage = 6;
+// const displayedNews = news.slice((currentPage - 1) * newsPerPage, currentPage * newsPerPage);
+// // ...tlačítka pro změnu currentPage...
+Zvážení použití CSS-in-JS řešení místo CSS Modules pro některé dynamické styly.
+Pro styly závislé na mnoha props nebo složité podmíněné styly může být CSS-in-JS (např. styled-components, Emotion) přehlednější. Pro většinu tvého projektu CSS Modules stačí.
+Jak by DjsSection.tsx zobrazovala žánry DJs? Barevné štítky?
+// V DjsSection.tsx, uvnitř mapování DJs
+// {dj.genres && dj.genres.map(genre => <span key={genre} className={${styles.genreTag} ${styles['genre-' + genre.toLowerCase().replace(' ','-')]}}>{genre}</span>)}
+A CSS třídy jako .genre-techno, .genre-deep-house s různými barvami.
+Přidání "progress bar" k EventsSlider.tsx ukazující aktuální pozici.
+// const [scrollPercentage, setScrollPercentage] = useState(0);
+// useEffect(() => { /* ... logika pro výpočet scrollPercentage na základě sliderRef ... / }, [/ závislosti */]);
+// <div className={styles.sliderProgress}><div style={{ width: ${scrollPercentage}% }} /></div>
+Jak by FeaturedEvent.tsx mohl zobrazit fotogalerii z minulých ročníků?
+Jednoduchý horizontální proužek náhledů obrázků pod hlavním obrázkem, nebo odkaz na samostatnou galerii.
+Testování výkonu animací v HeroSection.module.css na starších mobilech.
+Použít Chrome DevTools (Performance panel, Layers panel) připojené k reálnému zařízení nebo emulátoru s omezeným výkonem.
+Jak by se do Header.tsx přidala notifikační ikonka?
+// <button className={styles.notificationButton} aria-label="Notifikace">
+// <BellIcon /> {unreadNotifications > 0 && <span className={styles.badge}>{unreadNotifications}</span>}
+// </button>
+Zvážení použití WebP formátu pro všechny obrázky kvůli optimalizaci.
+<Image> z next/image to řeší automaticky – servíruje WebP, pokud prohlížeč podporuje a původní formát je vhodný.
+Jak by Newsletter.tsx mohl segmentovat uživatele podle zájmů?
+Při odeslání formuláře poslat i vybrané zájmy (z checkboxů) na server, kde by se uživatel tagoval.
+Přidání animace při rozbalování/sbalování DJ listu v DjsSection.tsx.
+/* DjsSection.module.css /
+.djsList {
+overflow: hidden;
+transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), opacity 0.3s ease-out;
+max-height: 0;
+opacity: 0;
+}
+.djsList.expanded { / Třída přidaná JS /
+max-height: 1000px; / Dostatečně velká hodnota */
+opacity: 1;
+}
+Jak by NewsSection.tsx mohla mít funkci "uložit článek na později"?
+Tlačítko u každého článku. Kliknutí by uložilo ID článku do localStorage. Samostatná stránka by pak zobrazila články z localStorage.
+Vylepšení hover efektu na navLink v Header.module.css – více kreativní?
+Současný efekt podtržení je dobrý. Alternativně by se mohlo pozadí odkazu jemně změnit nebo by se vedle textu objevila malá ikona.
+.navLink:hover { color: var(--color-primary); transform: scale(1.05) translateY(-1px); }
+.navLink:hover::after { width: 60%; left: 20%; /* Kratší, centrované podtržení */ }
+Jak by FeaturedEvent.tsx mohl integrovat mapu místa konání?
+Iframe z Google Maps nebo specializovaná React komponenta pro mapy (např. react-map-gl, google-map-react).
+// {event.coordinates && <iframe src={https://maps.google.com/maps?q=${event.coordinates.lat},${event.coordinates.lng}&z=15&output=embed} width="100%" height="300"></iframe>}
+Optimalizace useEffect hooku v Header.tsx aby se nespouštěl zbytečně.
+useEffect(() => { /* handleScroll / }, [scrolled]); a useEffect(() => { / mobileMenuOpen body overflow */ }, [mobileMenuOpen]); jsou již správně optimalizované svými poli závislostí.
+Přidání možnosti zobrazení eventů v EventsSlider.tsx jako seznam místo karet.
+// const [displayMode, setDisplayMode] = useState<'cards' | 'list'>('cards');
+// {displayMode === 'cards' ? events.map(event => <EventCard />) : events.map(event => <EventListItem />)}
+// <button onClick={() => setDisplayMode(prev => prev === 'cards' ? 'list' : 'cards')}>Přepnout zobrazení</button>
+Jak by DjsSection.tsx umožnila filtrování DJs podle jména?
+// const [djSearchTerm, setDjSearchTerm] = useState('');
+// const filteredDjsInList = activeCountryDjs.filter(dj => dj.name.toLowerCase().includes(djSearchTerm.toLowerCase()));
+// <input type="text" placeholder="Hledat DJ v seznamu..." value={djSearchTerm} onChange={e => setDjSearchTerm(e.target.value)} />
+Zvážení přidání "social proof" (např. počet odběratelů) do Newsletter.tsx.
+// const [subscriberCount, setSubscriberCount] = useState(12345); // Načíst z API
+// <p className={styles.socialProof}>Přidejte se k našim {subscriberCount.toLocaleString('cs-CZ')} spokojeným odběratelům!</p>
+Jak by HeroSection.tsx mohla mít více variant hlavního nadpisu pro A/B testování?
+Logika pro výběr varianty by byla v page.tsx nebo v samotné HeroSection (např. na základě cookie nebo parametru URL pro testování).
+// const getHeroTitleVariant = () => Math.random() < 0.5 ? "Původní nadpis" : "Alternativní nadpis";
+// <HeroSection title={getHeroTitleVariant()} />
+Přidání "scroll to top" tlačítka které se objeví po scrollnutí.
+// const [showScrollTop, setShowScrollTop] = useState(false);
+// useEffect(() => { /* ... listener na window.scrollY ... setShowScrollTop(window.scrollY > 300) ... */ }, []);
+// {showScrollTop && <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className={styles.scrollTopBtn}>↑</button>}
+Jak by Footer.tsx mohl být dynamičtější (např. nejnovější tweet)?
+Vytvořit Server Component nebo API route, která fetchne nejnovější tweet, a pak jej zobrazit.
+// async function LatestTweet() {
+// const tweet = await fetchLatestTweetFromApi();
+// return <p>Poslední tweet: {tweet.text}</p>;
+// }
+// <Footer ... ><LatestTweet /></Footer>
